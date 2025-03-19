@@ -1,4 +1,4 @@
-# Pedir al usuario dos números
+# Autor: Samuel Moya Vegamonte
 num1 = float(input("Ingresa el primer número: "))
 num2 = float(input("Ingresa el segundo número: "))
 
