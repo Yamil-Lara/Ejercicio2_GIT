@@ -1,3 +1,4 @@
+# Autor: Abraham Espinoza Lopez
 def raiz_cuadrada(n, precision=0.00001):
     if n < 0:
         return "No se puede calcular la raíz cuadrada de un número negativo"
