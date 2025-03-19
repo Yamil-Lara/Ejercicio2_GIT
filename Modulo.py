@@ -1,3 +1,4 @@
+#Autor: Juan Diego Delgadillo Fernandez
 def calcular_modulo(a, b):
     """
     Función que calcula el módulo de dos números dados.
