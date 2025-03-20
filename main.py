@@ -1,8 +1,8 @@
-import CalcularPotencias
-import Division
+import calcular_potencias
+import division
 import factorial
 import logaritmo
-import Modulo
+import modulo
 import multiplicacion
 import raiz_cuadrada
 import resta
@@ -23,9 +23,9 @@ def menu():
         print("9. Suma")
         print("10. Trigonometría")
         print("11. Salir")
-        
-        opcion = input("Seleccione una operación: ")
 
+        opcion = input("Seleccione una operación: ").strip()  # Se asegura de que no haya espacios en blanco
+        
         if opcion == "11":
             print("Saliendo...")
             break
@@ -33,12 +33,12 @@ def menu():
         elif opcion == "1":  # Potencias
             base = float(input("Ingrese la base: "))
             exponente = float(input("Ingrese el exponente: "))
-            print(f"Resultado: {CalcularPotencias.calcular_potencias(base, exponente)}")
+            print(f"Resultado: {calcular_potencias.calcular_potencias(base, exponente)}")
 
         elif opcion == "2":  # División
             a = float(input("Ingrese el dividendo: "))
             b = float(input("Ingrese el divisor: "))
-            print(f"Resultado: {Division.division(a, b)}")
+            print(f"Resultado: {division.division(a, b)}")
 
         elif opcion == "3":  # Factorial
             n = int(input("Ingrese un número entero: "))
@@ -52,7 +52,7 @@ def menu():
         elif opcion == "5":  # Módulo
             a = float(input("Ingrese el primer número: "))
             b = float(input("Ingrese el segundo número: "))
-            print(f"Resultado: {Modulo.modulo(a, b)}")
+            print(f"Resultado: {modulo.modulo(a, b)}")
 
         elif opcion == "6":  # Multiplicación
             a = float(input("Ingrese el primer número: "))
@@ -78,7 +78,7 @@ def menu():
             print("1. Seno")
             print("2. Coseno")
             print("3. Tangente")
-            trig_opcion = input("Seleccione una opción: ")
+            trig_opcion = input("Seleccione una opción: ").strip()
 
             angulo = float(input("Ingrese el ángulo en grados: "))
 
