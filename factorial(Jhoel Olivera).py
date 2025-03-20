@@ -8,3 +8,4 @@ def factorial(n):
 numero = int(input("Introduce un número para calcular su factorial: "))
 resultado = factorial(numero)
 print(f"El factorial de {numero} es: {resultado}")
+
